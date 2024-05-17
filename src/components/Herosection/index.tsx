@@ -4,7 +4,7 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import DesktopNav from "../Navigation/Desktop";
-import MobileNav from "../Navigation/Mobile";
+import MobileNav from "../Navigation/mobile";
 
 import RadarVid from "../../../static/video/hero_section_checks.mp4";
 
