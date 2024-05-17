@@ -6,7 +6,7 @@ const settings = {
   dots: false,
   infinite: true,
   autoplaySpeed: 500,
-  slidesToShow: 6,
+  slidesToShow: 5,
   slidesToScroll: 1,
   autoplay: true,
   arrows: false,
@@ -19,14 +19,6 @@ const Partner: React.FC = () => {
         Trusted Worldwide by Leading Businesses{" "}
       </h2>
       <Slider {...settings}>
-        <StaticImage
-          src={"../../../static/images/rally_trade_logo.png"}
-          alt=""
-          width={50}
-          placeholder="blurred"
-          objectFit="contain"
-          layout="constrained"
-        />
         <StaticImage
           src="../../../static/images/peleza_logo.png"
           alt="Peleza logo"
@@ -52,7 +44,7 @@ const Partner: React.FC = () => {
           layout="constrained"
         />
         <StaticImage
-          src="../../../static/images/stanbic-logo.webp"
+          src="../../../static/images/Stanbic-logo.webp"
           alt=""
           width={180}
           placeholder="blurred"
@@ -63,14 +55,6 @@ const Partner: React.FC = () => {
           src="../../../static/images/fedEx_logo.png"
           alt=""
           width={180}
-          placeholder="blurred"
-          objectFit="contain"
-          layout="constrained"
-        />
-        <StaticImage
-          src="../../../static/images/sama.png"
-          alt=""
-          width={50}
           placeholder="blurred"
           objectFit="contain"
           layout="constrained"

@@ -42,7 +42,7 @@ const DesktopNav: React.FC<Props> = ({ handleToggleRequest }) => {
               <li>{nav.name}</li>
             </AnchorLink>
           ))}
-          <li className="border border-[#251169] rounded px-6 py-2">
+          <li className="border border-[#251169]  rounded px-6 py-2">
             <button
               className="text-lg text-[#251169]"
               onClick={() =>
@@ -52,7 +52,7 @@ const DesktopNav: React.FC<Props> = ({ handleToggleRequest }) => {
               Login
             </button>
           </li>
-          <li className="bg-[#251169] px-6 py-2 rounded">
+          <li className="bg-[#251169] hover:bg-[#432f81] px-6 py-2 rounded">
             <button
               className="text-lg text-white"
               onClick={handleToggleRequest}

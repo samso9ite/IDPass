@@ -4,7 +4,7 @@ import RadarVid from "../../../static/video/idradar_onboard_screen.mp4";
 
 const FraudSimplification: React.FC = () => {
   return (
-    <div className="w-full mx-auto mt-16 md:mt-32 md:w-[75%]">
+    <div className="w-full mx-auto mt-16 md:mt-20 md:w-[75%]">
       <h3 className="font-semibold text-4xl text-center w-[85%] md:text-6xl md:w-3/5 m-auto">
         We Simplify Fraud Prevention for All Businesses
       </h3>

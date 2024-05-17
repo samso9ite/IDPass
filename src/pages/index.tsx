@@ -25,8 +25,7 @@ const IndexPage: React.FC<PageProps> = () => {
   };
 
   const welcomeMsg = () => {
-    let msg =
-      "%c 💚 We always want to improve the IdentityRadar App. Let us know if you find any issues 💚 ";
+    let msg = "%c 💚 Welcome to IdentityRadar By Prembly. 💚 ";
     let styles = [
       "font-size: 12px",
       "color: #fffce1",
@@ -45,7 +44,6 @@ const IndexPage: React.FC<PageProps> = () => {
     <>
       <header>
         <Herosection
-          isOpen={isOpenRequestDemo}
           handleToggleRequest={handleToggleRequest}
           isOpenSidenav={isOpenSidenav}
           handleToggleMenu={handleToggleMenu}
@@ -96,22 +94,5 @@ export default IndexPage;
 export const Head: HeadFC = () => (
   <>
     <title>IdentityRadar</title>
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="../../static/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="../../static/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="../../static/favicon-16x16.png"
-    />
   </>
 );

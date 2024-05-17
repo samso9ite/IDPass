@@ -46,13 +46,13 @@ const CustomerSatisfaction: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="hidden absolute -top-[250px] right-0  md:block">
+      <div className="hidden absolute -top-[350px] right-0  md:block">
         <StaticImage
-          src="../../../static/images/Circle_background.png"
+          src="../../../static/images/circle.png"
           placeholder="blurred"
           layout="fixed"
           width={800}
-          height={900}
+          height={1000}
           alt=""
           objectFit="contain"
         />
