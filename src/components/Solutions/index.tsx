@@ -91,7 +91,7 @@ const Solutions: React.FC<Props> = ({ handleToggleRequest }) => {
                     <div className="w-full hidden md:w-[50%] md:block">
                       {selectedTab === 0 ? (
                         <StaticImage
-                          src={"../../../static/images/Onboard_kyc.png"}
+                          src={"../../../static/images/onboard_kyc.png"}
                           placeholder="blurred"
                           layout="constrained"
                           width={500}
