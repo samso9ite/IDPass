@@ -34,10 +34,15 @@ type Props = {
 };
 
 const FAQ: React.FC<Props> = ({ handleToggleRequest }) => {
-  const [selectedFaq, setSelectedFaq] = React.useState<number>();
+  const [selectedFaq, setSelectedFaq] = React.useState<any>([]);
 
   const handleClick = (id: number) => {
-    setSelectedFaq(id);
+    if (selectedFaq.includes(id)) {
+      const newArr = selectedFaq.filter((faq: any) => faq !== id);
+      setSelectedFaq(newArr);
+    } else {
+      setSelectedFaq([...selectedFaq, id]);
+    }
   };
 
   return (
@@ -53,7 +58,7 @@ const FAQ: React.FC<Props> = ({ handleToggleRequest }) => {
           Our Experts Have Answers
         </h5>
         <button
-          className="bg-[#251169] px-8 py-4 rounded-lg mt-2 text-base md:mt-3 md:text-xl text-white"
+          className="bg-[#251169] hover:bg-[#432f81] px-8 py-4 rounded-lg mt-2 text-base  md:mt-3 md:text-xl text-white"
           onClick={handleToggleRequest}
         >
           Speak to expert
@@ -64,7 +69,7 @@ const FAQ: React.FC<Props> = ({ handleToggleRequest }) => {
           <div
             key={data.id}
             className={`mb-3 md:mb-8 ${
-              selectedFaq === data.id ? "bg-[#f9f9f9]" : ""
+              selectedFaq.includes(data.id) ? "bg-[#f9f9f9]" : ""
             } p-2`}
           >
             <div
@@ -79,7 +84,7 @@ const FAQ: React.FC<Props> = ({ handleToggleRequest }) => {
                 {selectedFaq === data.id ? "-" : "+"}
               </div>
             </div>
-            {selectedFaq === data.id && (
+            {selectedFaq.includes(data.id) && (
               <p className="w-[95%] text-sm leading-relaxed">{data.content}</p>
             )}
           </div>

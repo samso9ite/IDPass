@@ -98,17 +98,37 @@ const Footer: React.FC = () => {
           <div className="flex flex-col gap-6 mt-8 md:mt-0">
             <h4 className="text-white">Products</h4>
 
-            <a href="/identityPass" className="link">
+            <a
+              href="https://prembly.com/identityPass"
+              className="link"
+              target="_blank"
+              rel="noreferrer"
+            >
               <p className="text-white text-base">Identitypass</p>
             </a>
 
-            <a href="/IdentityRadar" className="text-white">
+            <a
+              href="https://identityradar.prembly.com/"
+              className="text-white"
+              target="_blank"
+              rel="noreferrer"
+            >
               <p className="text-white text-base">Identityradar</p>
             </a>
-            <a href="/backgroundCheck" className="text-white">
+            <a
+              href="https://prembly.com/backgroundCheck"
+              className="text-white"
+              target="_blank"
+              rel="noreferrer"
+            >
               <p className="text-white text-base">Background Checks</p>
             </a>
-            <a href="identityForm" className="text-white">
+            <a
+              href="https://identityforms.prembly.com/"
+              className="text-white"
+              target="_blank"
+              rel="noreferrer"
+            >
               <p className="text-white text-base">IdentityForms</p>
             </a>
           </div>
@@ -116,31 +136,66 @@ const Footer: React.FC = () => {
           <div className="flex flex-col gap-6 mt-8 md:mt-0">
             <h4 className="text-white">Industries</h4>
 
-            <a href="/sector" className="text-white">
+            <a
+              href="https://prembly.com/sector"
+              className="text-white"
+              target="_blank"
+              rel="noreferrer"
+            >
               <p className="text-white">Financial Sector</p>
             </a>
 
-            <a href="/crypto" className="text-white">
+            <a
+              href="https://prembly.com/crypto"
+              className="text-white"
+              target="_blank"
+              rel="noreferrer"
+            >
               <p className="text-white">Cryptocurrency</p>
             </a>
 
-            <a href="/management" className="text-white">
+            <a
+              href="https://prembly.com/management"
+              className="text-white"
+              target="_blank"
+              rel="noreferrer"
+            >
               <p className="text-white">HR Management</p>
             </a>
 
-            <a href="/insurance" className="text-white">
+            <a
+              href="https://prembly.com/insurance"
+              className="text-white"
+              target="_blank"
+              rel="noreferrer"
+            >
               <p className="text-white">Insurance</p>
             </a>
 
-            <a href="/mobilty" className="text-white">
+            <a
+              href="https://prembly.com/mobilty"
+              className="text-white"
+              target="_blank"
+              rel="noreferrer"
+            >
               <p className="text-white">Mobility</p>
             </a>
 
-            <a href="/tobacco" className="text-white">
+            <a
+              href="https://prembly.com/tobacco"
+              className="text-white"
+              target="_blank"
+              rel="noreferrer"
+            >
               <p className="text-white">Tobacco & Alcohol</p>
             </a>
 
-            <a href="/publicSector" className="text-white">
+            <a
+              href="https://prembly.com/publicSector"
+              className="text-white"
+              target="_blank"
+              rel="noreferrer"
+            >
               <p className="text-white">Public Sector</p>
             </a>
           </div>
@@ -158,7 +213,7 @@ const Footer: React.FC = () => {
             </a>
 
             <a
-              href="/press"
+              href="https://prembly.com/press"
               className="text-white"
               target="_blank"
               rel="noreferrer"
@@ -167,7 +222,7 @@ const Footer: React.FC = () => {
             </a>
 
             <a
-              href="/faqs"
+              href="https://prembly.com/faqs"
               className="text-white"
               target="_blank"
               rel="noreferrer"
@@ -176,7 +231,7 @@ const Footer: React.FC = () => {
             </a>
 
             <a
-              href="/event"
+              href="https://prembly.com/event"
               className="text-white"
               target="_blank"
               rel="noreferrer"
@@ -188,24 +243,57 @@ const Footer: React.FC = () => {
           <div className="flex flex-col gap-6 mt-8 md:mt-0">
             <h4 className="text-white">Company</h4>
 
-            <a href="/about" className="text-white">
+            <a
+              href="https://prembly.com/about"
+              className="text-white"
+              target="_blank"
+              rel="noreferrer"
+            >
               <p className="text-white">About Us</p>
             </a>
 
-            <a href="/career" className="text-white">
+            <a
+              href="https://prembly.com/career"
+              className="text-white"
+              target="_blank"
+              rel="noreferrer"
+            >
               <p className="text-white">Careers</p>
             </a>
 
-            <a href="/contact" className="text-white">
+            <a
+              href="https://prembly.com/contact"
+              className="text-white"
+              target="_blank"
+              rel="noreferrer"
+            >
               <p className="text-white">Contact Us</p>
             </a>
 
-            <a href="/meet" className="text-white">
+            <a
+              href="https://prembly.com/meet"
+              className="text-white"
+              target="_blank"
+              rel="noreferrer"
+            >
               <p className="text-white">Meet The Team</p>
             </a>
 
-            <a href="/compliance" className="text-white">
+            <a
+              href="https://prembly.com/compliance"
+              className="text-white"
+              target="_blank"
+              rel="noreferrer"
+            >
               <p className="text-white">Compliance Certificates</p>
+            </a>
+            <a
+              href="https://prembly.com/partnership"
+              className="text-white"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <p className="text-white">Become a Partner</p>
             </a>
           </div>
         </div>
@@ -243,19 +331,34 @@ const Footer: React.FC = () => {
 
         <div className="flex flex-col gap-4 items-center justify-center border-y border-[#E3F0EF69] py-6 mt-12 md:mt-16 md:flex-row">
           <div>
-            <a href="/Policy" className="">
+            <a
+              href="https://prembly.com/Policy"
+              className=""
+              target="_blank"
+              rel="noreferrer"
+            >
               <p className="text-white">Privacy Policy</p>
             </a>
           </div>
 
           <div className="col-md-2">
-            <a href="/terms" className="">
+            <a
+              href="https://prembly.com/terms"
+              className=""
+              target="_blank"
+              rel="noreferrer"
+            >
               <p className="text-white">Terms Of Service</p>
             </a>
           </div>
 
           <div className="col-md-2">
-            <a href="/dataProtection" className="">
+            <a
+              href="https://prembly.com/dataProtection"
+              className=""
+              target="_blank"
+              rel="noreferrer"
+            >
               <p className="text-white">Data Protection Policy</p>
             </a>
           </div>

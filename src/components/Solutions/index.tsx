@@ -49,10 +49,10 @@ const Solutions: React.FC<Props> = ({ handleToggleRequest }) => {
           Our Solutions
         </h2>
         <div>
-          <h2 className="text-[#0B0A0A] font-semibold text-3xl w-[90%] mx-auto md:mx-0 md:text-6xl md:w-2/5 ">
+          <h2 className="text-[#0B0A0A] font-semibold text-3xl w-[90%] mx-auto md:mx-0 md:text-6xl md:w-2/5 md:leading-[1.2]">
             Beat Fraud With IdentityRadar
           </h2>
-          <div className="bg-[#F2F4FD] md:rounded-[25px] pt-[40px] px-[30px] md:px-[80px] mt-10 mb-[32] pb-[40px]">
+          <div className="bg-[#F2F4FD] pb-[40px] pt-[40px] px-[30px] mt-10 mb-[32] md:px-[80px] md:rounded-[25px] md:pb-[100px] md:pt-[50px] ">
             <div>
               <div className="flex items-start gap-4 mb-10 md:mb-20">
                 {tabs.map((tab: string, index: number) => (
@@ -82,7 +82,7 @@ const Solutions: React.FC<Props> = ({ handleToggleRequest }) => {
                       </h3>
                       <p className="py-4">{data.content}</p>
                       <button
-                        className="bg-[#251169] text-white px-8 py-4 rounded-lg text-base mt-3 md:text-xl"
+                        className="bg-[#251169] hover:bg-[#432f81] text-white px-8 py-4 rounded-lg text-base mt-3 md:text-xl"
                         onClick={handleToggleRequest}
                       >
                         Request Demo

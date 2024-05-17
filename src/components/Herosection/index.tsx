@@ -6,19 +6,17 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import DesktopNav from "../Navigation/Desktop";
 import MobileNav from "../Navigation/Mobile";
 
-import RadarVid from "../../../static/video/hero_section_radar.mp4";
+import RadarVid from "../../../static/video/hero_section_checks.mp4";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 type Props = {
-  isOpen: boolean;
   handleToggleRequest: any;
   isOpenSidenav: boolean;
   handleToggleMenu: any;
 };
 
 const IndexPage: React.FC<Props> = ({
-  isOpen,
   handleToggleRequest,
   isOpenSidenav,
   handleToggleMenu,
@@ -87,10 +85,10 @@ const IndexPage: React.FC<Props> = ({
         handleToggleRequest={handleToggleRequest}
         handleToggleMenu={handleToggleMenu}
       />
-      <DesktopNav isOpen={isOpen} handleToggleRequest={handleToggleRequest} />
+      <DesktopNav handleToggleRequest={handleToggleRequest} />
       <div className="bg-[url('/images/banner.png')] bg-bottom bg-no-repeat bg-cover">
         <div className="text-center mt-12 md:mt-0 md:py-12 " ref={refContainer}>
-          <h1 className="title w-[85%] mx-auto px-1 text-[26px] leading-tight font-semibold md:w-[70%] md:text-8xl md:leading-none md:h-[auto] md:pt-[4rem] md:pb-[3rem] md:px-0 ">
+          <h1 className="title w-[85%] mx-auto px-1 text-[26px] leading-tight font-semibold md:w-[58%] md:text-[80px] md:leading-[1.1] md:h-[auto] md:pt-[4rem] md:pb-[3rem] md:px-0 ">
             Discover And Prevent{" "}
             <span
               style={{
@@ -122,7 +120,7 @@ const IndexPage: React.FC<Props> = ({
             managing fraud risks.
           </p>
           <button
-            className="bg-[#251169] text-white px-8 py-4 rounded-lg mt-3 text-base md:text-xl cta"
+            className="bg-[#251169] hover:bg-[#432f81] text-white px-8 py-4 rounded-lg mt-3 text-base md:text-xl md:mt-8 cta"
             onClick={handleToggleRequest}
           >
             Request Demo
@@ -131,8 +129,9 @@ const IndexPage: React.FC<Props> = ({
         <video
           autoPlay
           loop
+          preload="metadata"
           muted
-          className="w-full mt-8 m-auto md:w-[80%] md:mt-0"
+          className="w-full mt-8 m-auto md:w-[80%] md:-mt-12"
         >
           <source src={RadarVid} type="video/mp4" />
         </video>

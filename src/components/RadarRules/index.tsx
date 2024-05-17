@@ -1,51 +1,11 @@
 import * as React from "react";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import NameIntelligence from "../../../static/images/name-intelligence.gif";
 import IPIntelligence from "../../../static/images/ip-intelligence.gif";
 import PhoneIntelligence from "../../../static/images/phone-intelligence.gif";
 import EmailIntelligence from "../../../static/images/email-intelligence.gif";
 
-gsap.registerPlugin(useGSAP, ScrollTrigger);
-
 const RadarRules = () => {
-  const ruleRef: any = React.useRef(null);
-
-  // const panels = document.querySelectorAll(".panel");
-
-  // const tl = gsap.timeline();
-
-  // useGSAP(
-  //   () => {
-  //     panels.forEach((panel) => {
-  //       const tl = gsap.timeline({
-  //         scrollTrigger: {
-  //           trigger: panel,
-  //           scrub: true,
-  //           start: "top 40%",
-  //           end: "top 80%",
-  //           pin: true,
-  //         },
-  //       });
-
-  //       tl.fromTo(
-  //         panel,
-  //         {
-  //           opacity: 0.7,
-  //           ease: "none",
-  //         },
-  //         {
-  //           opacity: 1,
-  //           ease: "none",
-  //         }
-  //       );
-  //     });
-  //   },
-  //   { scope: ruleRef }
-  // );
-
   return (
     <div className="w-full mx-auto mt-16 md:mt-32 md:w-[85%]">
       <h2 className="uppercase bg-[#F2F2F2] w-[fit-content] rounded-lg py-4 px-6 text-[#0B0A0A] text-base font-light mb-8">
@@ -61,7 +21,6 @@ const RadarRules = () => {
       </p>
 
       <div
-        ref={ruleRef}
         className="parent-wrapper"
         style={{
           overflow: "",

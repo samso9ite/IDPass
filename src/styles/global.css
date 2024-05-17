@@ -6,14 +6,16 @@
   font-family: "GeneralSans-SemiBold";
   font-style: normal;
   font-display: swap;
-  src: url(/fon/GeneralSans-SemiBold.woff2) format("woff2");
+  src: url("https://prembly-assets.s3.us-east-2.amazonaws.com/fon/GeneralSans-Semibold.woff2")
+    format("woff2");
 }
 
 @font-face {
   font-family: "GeneralSans-Regular";
   font-style: normal;
   font-display: swap;
-  src: url(/fon/GeneralSans-Regular.woff2) format("woff2");
+  src: url("https://prembly-assets.s3.us-east-2.amazonaws.com/fon/GeneralSans-Regular.woff2")
+    format("woff2");
 }
 
 h1,
@@ -52,7 +54,7 @@ p {
 }
 .panel {
   position: sticky;
-  top: 0;
+  top: 100px;
 }
 
 .calendly-inline-widget {
