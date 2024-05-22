@@ -11,7 +11,7 @@ const FraudSimplification: React.FC = () => {
       <p className="w-[90%] text-left md:w-[60%] mx-auto text-base mt-4 mb-20 font-normal md:text-lg md:text-center leading-tight text-[#353535]">
         Identityradar provides a wide range of fraud prevention tools to
         simplify identity verification and fraud detection for businesses
-        worldwide. Our teams are always ready to support you and your customers,
+        worldwide. Our team is always ready to support you and your customers,
         no matter where you are.
       </p>
       <div className="hidden md:block">

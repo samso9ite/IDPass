@@ -17,7 +17,8 @@ const CustomerSatisfaction: React.FC = () => {
         </h2>
         <p className="w-full md:w-5/12 text-base md:text-lg mt-6">
           Being a world class fraud detection product, we have been able to
-          acheive successful with our various features on IdentityRadar.
+          acheive successful onboarding and verification with our various
+          features on IdentityRadar.
         </p>
         <div className="flex gap-16 mt-20 flex-col items-center justify-center md:flex-row md:items-left md:justify-start">
           <div className="text-center md:border-r md:border-gray-300 md:pr-20 md:text-left">
