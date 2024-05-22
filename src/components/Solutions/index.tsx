@@ -12,7 +12,7 @@ const datas = [
   {
     id: 0,
     title: "Perform Instant Onboarding Screening",
-    content: `               With advancing technology, fraudsters use AI, too. Scrutiniza
+    content: `               With advancing technology, fraudsters use AI, too. Scrutinize
   all sign-ups to your platform, ensuring only legitimate users
   pass through.`,
     classProp: "onboarding",
