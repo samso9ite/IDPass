@@ -6,7 +6,7 @@ const settings = {
   dots: false,
   infinite: true,
   autoplaySpeed: 500,
-  slidesToShow: 5,
+  slidesToShow: 4,
   slidesToScroll: 1,
   autoplay: true,
   arrows: false,
@@ -19,14 +19,14 @@ const Partner: React.FC = () => {
         Trusted Worldwide by Leading Businesses{" "}
       </h2>
       <Slider {...settings}>
-        <StaticImage
+        {/* <StaticImage
           src="../../../static/images/peleza_logo.png"
           alt="Peleza logo"
           width={180}
           placeholder="blurred"
           objectFit="contain"
           layout="constrained"
-        />
+        /> */}
         <StaticImage
           src="../../../static/images/upfield.png"
           alt=""
