@@ -13,7 +13,7 @@ const Testimonials = () => {
                     <section className="">
                         <div className="py-8 px-4 mx-auto max-w-screen-xl  lg:py-16 lg:px-6">
                            <div className="grid mb-8 lg:mb-12 lg:grid-cols-2">
-                               <div className="row  border-gray-200 md:p-1 lg:border-r dark:bg-gray-800 dark:border-gray-700" > 
+                               <div className="row  border-gray-200 md:p-1 lg:border-r dark:border-gray-700" > 
                                     <figcaption className="flex space-x-3 w-[20%]">
                                     <StaticImage
                                         src="../../../public/images/idPasss/client1.png"
@@ -23,10 +23,10 @@ const Testimonials = () => {
                                         objectFit="contain"
                                         layout="constrained"
                                         />
-                                         <span className="text-lg font-semibold text-gray-900 dark:text-white">Bundle</span>
+                                         <span className="text-lg font-semibold text-gray-900 ">Bundle</span>
                                     </figcaption>
                                     <figure className="flex flex-col justify-between">
-                                        <blockquote className="mx-auto  max-w-2xl dark:text-gray-400 " >
+                                        <blockquote className="mx-auto  max-w-2xl " >
                                             <p className=" w-[80%]" style={{marginLeft:"10.5%", fontSize:"18px"}}>
                                                 Identitypass's customer service is outstanding; they respond to our complaints promptly and efficiently. 
                                                 Despite our high transaction volume, we experienced no server issues upon onboarding. 
@@ -45,10 +45,10 @@ const Testimonials = () => {
                                         objectFit="contain"
                                         layout="constrained"
                                         />
-                                         <span className="text-lg font-semibold text-gray-900 dark:text-white">Lendigo</span>
+                                         <span className="text-lg font-semibold text-gray-900 ">Lendigo</span>
                                     </figcaption>
                                     <figure className="flex flex-col justify-between">
-                                        <blockquote className="mx-auto  max-w-2xl dark:text-gray-400 " >
+                                        <blockquote className="mx-auto  max-w-2xl " >
                                             <p className=" w-[80%]" style={{marginLeft:"14.5%", fontSize:"18px"}}>
                                                 Identitypass verification product has been great so far. My team and I enjoy 
                                                 the services we receive and we don’t have compliants.
@@ -56,7 +56,6 @@ const Testimonials = () => {
                                         </blockquote>
                                     </figure>
                                 </div>
-                                
                             </div>
 
                           
