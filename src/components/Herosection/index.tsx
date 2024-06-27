@@ -6,7 +6,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import DesktopNav from "../Navigation/Desktop";
 import MobileNav from "../Navigation/mobile";
 
-import RadarVid from "../../../static/video/hero_section_checks.mp4";
+import RadarVid from "../../../public/images/idPasss/heroImg.svg"
+import { StaticImage } from "gatsby-plugin-image";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -86,55 +87,30 @@ const IndexPage: React.FC<Props> = ({
         handleToggleMenu={handleToggleMenu}
       />
       <DesktopNav handleToggleRequest={handleToggleRequest} />
-      <div className="bg-[url('/images/banner.png')] bg-bottom bg-no-repeat bg-cover">
-        <div className="text-center mt-12 md:mt-0 md:py-12 " ref={refContainer}>
-          <h1 className="title w-[85%] mx-auto px-1 text-[26px] leading-tight font-semibold md:w-[58%] md:text-[80px] md:leading-[1.1] md:h-[auto] md:pt-[4rem] md:pb-[3rem] md:px-0 ">
-            Discover And Prevent{" "}
-            <span
-              style={{
-                backgroundImage:
-                  "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(37,17,105,1) 0%, rgba(207,25,160,1) 100%)",
-                backgroundClip: "text",
-                backgroundSize: "100%",
-                WebkitTextFillColor: "transparent",
-              }}
-            >
-              Fraud
-            </span>{" "}
-            Patterns In <span className="text-[#251169]">Real-</span>
-            <span
-              style={{
-                backgroundImage:
-                  "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(37,17,105,1) 0%, rgba(207,25,160,1) 100%)",
-                backgroundClip: "text",
-                backgroundSize: "100%",
-                WebkitTextFillColor: "transparent",
-              }}
-            >
-              Time
+      <div className="container mx-auto" style={{marginTop:"4%"}}>
+        <div className="columns-2">
+          <div className="colums-1">
+            <span className="w-[85%] text-[32px] md:w-[38%] md:text-[54px]">
+              Instantly Verify <span className="font-bold">Individuals</span> and <span className="font-bold">Businesses'</span> Identities Globally
             </span>
-          </h1>
-          <p className="w-[95%] mx-auto mt-2 py-6 text-sm  md:w-[55%]  md:text-xl  text-[#353535] md:leading-8 md:py-0 md:mt-0 subtitle">
-            Transform your transaction monitoring, onboarding checks, and AML
-            screenings with our easy-to-integrate APIs, swiftly identifying and
-            managing fraud risks.
-          </p>
-          <button
-            className="bg-[#251169] hover:bg-[#432f81] text-white px-8 py-4 rounded-lg mt-3 text-base md:text-xl md:mt-8 cta"
-            onClick={handleToggleRequest}
-          >
-            Request Demo
-          </button>
+
+            <p className="mt-4 w-[95%] text-[20px]">
+              Identitypass offers simplified KYC/KYB solutions, enabling digital businesses to acquire and onboard customers with ease through 
+              tools that can be accessed for instant Data verification, Document Verification, and Biometric Authentication.
+            </p>
+          </div>
+          <div className="columns-1">
+          <StaticImage
+            src={"../../../public/images/idPasss/hero.png"}
+            alt=""
+            layout="constrained"
+            placeholder="blurred"
+            // width={30}
+            quality={100}
+          />
+          </div>
+          
         </div>
-        <video
-          autoPlay
-          loop
-          preload="metadata"
-          muted
-          className="w-full mt-8 m-auto md:w-[80%] md:-mt-12"
-        >
-          <source src={RadarVid} type="video/mp4" />
-        </video>
       </div>
     </>
   );

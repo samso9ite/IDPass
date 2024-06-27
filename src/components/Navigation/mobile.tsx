@@ -73,7 +73,7 @@ const MobileNav: React.FC<Props> = ({
                 Login
               </button>
             </li>
-            <li className="bg-[#251169] px-6 py-2 rounded text-center">
+            <li className="bg-[#420D59] px-6 py-2 rounded text-center">
               <button
                 className="text-lg text-white text-center"
                 onClick={handleToggleRequest}

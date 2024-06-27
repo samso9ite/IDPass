@@ -14,19 +14,20 @@ const settings = {
 
 const Partner: React.FC = () => {
   return (
-    <div className="w-[85%] mx-auto mt-20">
-      <h2 className="text-[#251169] font-semibold mb-10 text-xl w-[90%] md:text-3xl md:w-2/5">
-        Trusted Worldwide by Leading Businesses{" "}
-      </h2>
-      <Slider {...settings}>
-        {/* <StaticImage
+    <div className="w-[100%] mx-auto mt-20 bg-[#821AB2] py-3 mt-2">
+      <div className="w-[85%]  mx-auto">
+      <p className="text-[#251169] text-center text-[#fff] font-bold text-[24px]">
+        Trusted by 50+ Companies{" "}
+      </p>
+      <Slider {...settings} className="pt-3">
+        <StaticImage
           src="../../../static/images/peleza_logo.png"
           alt="Peleza logo"
           width={180}
           placeholder="blurred"
           objectFit="contain"
           layout="constrained"
-        /> */}
+        />
         <StaticImage
           src="../../../static/images/upfield.png"
           alt=""
@@ -60,6 +61,7 @@ const Partner: React.FC = () => {
           layout="constrained"
         />
       </Slider>
+      </div>
     </div>
   );
 };

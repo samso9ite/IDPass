@@ -2,8 +2,8 @@ import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `identityradar website`,
-    siteUrl: `https://identityradar.prembly.com`
+    title: `Identitypass website`,
+    siteUrl: `https://identitypass.prembly.com`
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin
@@ -26,7 +26,7 @@ const config: GatsbyConfig = {
       background_color: `#f7f0eb`,
       theme_color: `#a2466c`,
       display: `standalone`,
-      icon: `./static/images/favicon-32x32.png`
+      icon: `./static/images/fav.svg`
     },
   },
   {

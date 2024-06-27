@@ -29,7 +29,6 @@ const DesktopNav: React.FC<Props> = ({ handleToggleRequest }) => {
           <StaticImage
             src="../../../static/images/logo.png"
             alt="logo"
-            width={150}
             placeholder="blurred"
             objectFit="contain"
             layout="fixed"
@@ -38,8 +37,8 @@ const DesktopNav: React.FC<Props> = ({ handleToggleRequest }) => {
 
         <ul className="flex items-center gap-5">
           {Navs.map((nav: { name: string; path: string }) => (
-            <AnchorLink to={nav.path} key={nav.name}>
-              <li>{nav.name}</li>
+            <AnchorLink to={nav.path} key={nav.name} >
+              <li className="text-[#420D59] text-lg">{nav.name}</li>
             </AnchorLink>
           ))}
           <li className="border border-[#251169]  rounded px-6 py-2">
@@ -52,7 +51,7 @@ const DesktopNav: React.FC<Props> = ({ handleToggleRequest }) => {
               Login
             </button>
           </li>
-          <li className="bg-[#251169] hover:bg-[#432f81] px-6 py-2 rounded">
+          <li className="bg-[#420D59] hover:bg-[#821AB2] px-6 py-2 rounded">
             <button
               className="text-lg text-white"
               onClick={handleToggleRequest}

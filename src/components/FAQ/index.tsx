@@ -3,30 +3,31 @@ import * as React from "react";
 const datas = [
   {
     id: 1,
-    title: "What is IdentityRadar?",
-    content: `Identity Radar is a leading provider of identity verification and authentication solutions. Radar offers innovative technology to help businesses combat fraud and streamline customer onboarding processes.`,
+    title: "What are some of the verification services offered by identitypass?",
+    content: `We offer BVN, NIN, Voter's card verification, Phone number, Account number, Driver's License, International passport for easy onboarding of customers.`,
   },
   {
     id: 2,
-    title: "How does Radar work?",
-    content:
-      "Radar’s solutions utilize advanced AI and machine learning algorithms to verify the authenticity of government-issued IDs, passports, driver's licenses, Names, Phone numbers, and other identity documents to further enhance security. ",
+    title: "Is there a Test Environment?",
+    content: `Our Sandbox environment allows you to test APIs before integrating into the live environment.`,
   },
   {
     id: 3,
-    title: "What industries does Radar serve?",
-    content: `Radar serves a wide range of industries, including financial services, healthcare, e-commerce, and more. Any industry that requires identity verification and fraud prevention solutions can benefit from radar’s technology.`,
+    title: "How long does Integration take?",
+    content:
+      "We have a very smooth integration process that takes about 24 hours or less to integrate with our API.",
   },
   {
     id: 4,
-    title: "What are the benefits of using Radar?",
-    content: `Using Radar’s solutions helps businesses reduce fraud, improve compliance with regulations such as KYC (Know Your Customer) and AML (Anti-Money Laundering), enhance user experience, and streamline onboarding processes.`,
+    title: "How do I integrate into any platform I build?",
+    content: `You can integrate with our verification systems via APIs.`,
   },
   {
     id: 5,
-    title: "Is Radar compliant with data privacy regulations?",
-    content: `Yes, Radar takes data privacy and security seriously and ensures compliance with regulations such as GDPR (General Data Protection Regulation) and others. Radar employs robust security measures to protect sensitive information.`,
+    title: "Do we get charged for failed API calls?",
+    content: `No, we do not charge for failed calls. You only get charged for successful calls.`,
   },
+ 
 ];
 
 type Props = {
@@ -69,8 +70,8 @@ const FAQ: React.FC<Props> = ({ handleToggleRequest }) => {
           <div
             key={data.id}
             className={`mb-3 md:mb-8 ${
-              selectedFaq.includes(data.id) ? "bg-[#f9f9f9]" : ""
-            } p-2`}
+              selectedFaq.includes(data.id) ? "bg-[#FBF7FD]" : ""
+            } p-3`}
           >
             <div
               key={data.title}

@@ -43,84 +43,68 @@ const Solutions: React.FC<Props> = ({ handleToggleRequest }) => {
   };
 
   return (
-    <div className={`w-full mx-auto mt-16 md:mt-32 md:w-[85%]`} id="solutions">
+    <div className={`w-full mx-auto mt-5 md:mt-20 md:w-[85%]`} id="solutions">
       <div className="">
-        <h2 className="uppercase bg-[#F2F2F2] w-[fit-content] ml-5 rounded-lg py-4 px-6 text-[#0B0A0A] text-base font-light mb-8 md:ml-0">
-          Our Solutions
-        </h2>
+       <p className="text-[#B853E6]"> A PLATFORM YOU CAN TRUST</p>
         <div>
-          <h2 className="text-[#0B0A0A] font-semibold text-3xl w-[90%] mx-auto md:mx-0 md:text-6xl md:w-2/5 md:leading-[1.2]">
-            Beat Fraud With IdentityRadar
-          </h2>
-          <div className="bg-[#F2F4FD] pb-[40px] pt-[40px] px-[30px] mt-10 mb-[32] md:px-[80px] md:rounded-[25px] md:pb-[100px] md:pt-[50px] ">
-            <div>
-              <div className="flex items-start gap-4 mb-10 md:mb-20">
-                {tabs.map((tab: string, index: number) => (
-                  <button
-                    key={index}
-                    className={`${
-                      selectedTab === index
-                        ? "bg-[#251169] text-white font-medium"
-                        : "bg-white text-[#0B0A0A]"
-                    } rounded-full text-xs px-4 py-2 md:py-4 md:px-6 md:text-lg`}
-                    onClick={() => handleSelect(index)}
-                  >
-                    {tab}
-                  </button>
-                ))}
-              </div>
-              {datas
-                .filter((data: any) => data.id === selectedTab)
-                .map((data: any) => (
-                  <div
-                    className={`flex flex-col items-center mt-0 gap-20 md:flex-row md:justify-between`}
-                    key={data.title}
-                  >
-                    <div className="w-full md:w-[50%]">
-                      <h3 className="text-[#0B0A0A] text-3xl md:text-5xl">
-                        {data.title}
-                      </h3>
-                      <p className="py-4">{data.content}</p>
-                      <button
-                        className="bg-[#251169] hover:bg-[#432f81] text-white px-8 py-4 rounded-lg text-base mt-3 md:text-xl"
-                        onClick={handleToggleRequest}
-                      >
-                        Request Demo
-                      </button>
-                    </div>
-                    <div className="w-full hidden md:w-[50%] md:block">
-                      {selectedTab === 0 ? (
-                        <StaticImage
-                          src={"../../../static/images/onboard_kyc.png"}
-                          placeholder="blurred"
-                          layout="constrained"
-                          width={500}
-                          alt="Onboarding Screening"
-                          objectFit="cover"
-                        />
-                      ) : selectedTab === 1 ? (
-                        <StaticImage
-                          src={"../../../static/images/verification_kyc.png"}
-                          placeholder="blurred"
-                          layout="constrained"
-                          width={800}
-                          alt="Onboarding Screening"
-                          objectFit="cover"
-                        />
-                      ) : (
-                        <StaticImage
-                          src={"../../../static/images/ongoing_kyc.png"}
-                          placeholder="blurred"
-                          layout="constrained"
-                          width={800}
-                          alt="Onboarding Screening"
-                          objectFit="cover"
-                        />
-                      )}
-                    </div>
-                  </div>
-                ))}
+          <h3 className="text-[#0B0A0A] font-semibold text-5xl w-[50%] mx-auto mt-5 md:mx-0 md:text-5xl  md:leading-[1.2]">
+          One Platform For All Your Verification Needs
+          </h3>
+          <div className="mt-10 grid gap-x-12 gap-y-7  grid-cols-4">
+          <div className="max-w-sm rounded overflow-hidden shadow-lg bg-[#420D59] text-[#fff]">
+            <div className="px-6 py-4">
+              <div className=" text-2xl mb-2 font-semibold">Verify Identities <br/>Quickly</div>
             </div>
+            <StaticImage
+              src="../../../public/images/idPasss/Verify-identities.png"
+              alt="Identity Verification"
+              placeholder="blurred"
+              objectFit="contain"
+              layout="constrained"
+            />
+          </div>
+
+          <div className="max-w-sm rounded overflow-hidden shadow-lg bg-[#2F528E] text-[#fff]">
+            <div className="px-6 py-4">
+              <div className=" text-2xl mb-2 font-semibold">Instant Document Verification</div>
+            </div>
+            <StaticImage
+              src="../../../public/images/idPasss/document-verification.png"
+              alt="Document Verification"
+              placeholder="blurred"
+              objectFit="contain"
+              layout="constrained"
+              className="mt-30"
+            />
+          </div>
+
+          <div className="max-w-sm rounded overflow-hidden shadow-lg bg-[#420D59] text-[#fff]">
+            <div className="px-6 py-4">
+              <div className=" text-2xl font-semibold mb-2">Accurate Biometric Authentication</div>
+            </div>
+            <StaticImage
+              src="../../../public/images/idPasss/Biometric.png"
+              alt="Peleza logo"
+              placeholder="blurred"
+              objectFit="contain"
+              layout="constrained"
+            />
+          </div>
+
+          <div className="max-w-sm rounded overflow-hidden shadow-lg bg-[#2F528E] text-[#fff]">
+            <div className="px-6 py-4">
+              <div className=" text-2xl mb-2 font-semibold">Customizable Identity Checker Widget</div>
+            </div>
+            <StaticImage
+             src="../../../public/images/idPasss/checker-widget.png"
+              alt=""
+              width={240}
+              placeholder="blurred"
+              objectFit="contain"
+              layout="constrained"
+              className="mx-auto block"
+            />
+          </div>
           </div>
         </div>
       </div>
