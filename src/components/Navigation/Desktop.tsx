@@ -23,8 +23,8 @@ type Props = {
 
 const DesktopNav: React.FC<Props> = ({ handleToggleRequest }) => {
   return (
-    <div className="py-8 hidden md:block">
-      <div className="flex items-center justify-between w-[85%] m-auto">
+    <div className="hidden md:block mt-5">
+      <div className="flex items-center justify-between w-[90%] m-auto">
         <a href="/">
           <StaticImage
             src="../../../static/images/logo.png"
@@ -32,6 +32,7 @@ const DesktopNav: React.FC<Props> = ({ handleToggleRequest }) => {
             placeholder="blurred"
             objectFit="contain"
             layout="fixed"
+            width={350}
           />
         </a>
 

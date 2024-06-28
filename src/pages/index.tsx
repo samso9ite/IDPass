@@ -5,15 +5,13 @@ import { InlineWidget } from "react-calendly";
 import Herosection from "../components/Herosection";
 import Partner from "../components/Partner";
 import Solutions from "../components/Solutions";
-import RadarRules from "../components/IntegrationProcess";
-import CustomerSatisfaction from "../components/Certification";
-import FraudSimplification from "../components/FraudSimplication";
 import FAQ from "../components/FAQ";
 import Footer from "../components/Footer";
 import IntegrationProcess from "../components/IntegrationProcess";
 import Certification from "../components/Certification";
 import Testimonials from "../components/Testimonials";
 import LevelUp from "../components/LevelUp";
+import Video from "../components/Video";
 
 const IndexPage: React.FC<PageProps> = () => {
   const [isOpenRequestDemo, setIsOpenRequestDemo] = React.useState(false);
@@ -53,13 +51,13 @@ const IndexPage: React.FC<PageProps> = () => {
         />
       </header>
       <main>
+        <Video />
         <Partner />
         <Solutions handleToggleRequest={handleToggleRequest} />
         <IntegrationProcess />
         <Certification />
         <Testimonials />
         <LevelUp />
-        {/* <FraudSimplification /> */}
         <FAQ handleToggleRequest={handleToggleRequest} />
       </main>
       <footer>

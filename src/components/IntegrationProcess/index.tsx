@@ -24,7 +24,7 @@ const IntegrationProcess = () => {
               className="mt-10"
             />
       </div>
-      <div className="rounded  md:w-[40%] px-5 overflow-hidden shadow-lg mx-auto">
+      <div className="rounded  md:w-[50%] px-5 overflow-hidden shadow-lg mx-auto">
         <div className="px-6 py-4">
           <ol style={{listStyleType:"number"}}>
             <li>
@@ -44,7 +44,6 @@ const IntegrationProcess = () => {
               </p> 
             </li>
             <hr className="mb-5" />
-
             <li>
               <span style={{fontSize:"18px", fontWeight:"400"}}>Play With Our Portal Directly</span>
               <p className="mt-2 mb-5  text-[18px]">
