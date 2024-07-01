@@ -51,7 +51,7 @@ const Solutions: React.FC<Props> = ({ handleToggleRequest }) => {
             </div>
             <div className="group-hover:hidden">
               <StaticImage
-                src="../../../public/images/idPasss/Verify-identities.png"
+                src="../../../public/images/idPasss/seamless_data.png"
                 alt="Identity Verification"
                 placeholder="blurred"
                 objectFit="contain"
@@ -64,11 +64,12 @@ const Solutions: React.FC<Props> = ({ handleToggleRequest }) => {
               color:"white",
               }}>
               <StaticImage
-                src="../../../public/images/idPasss/data-verification-hover.svg"
+                src="../../../public/images/idPasss/seamless_data_small.png"
                 alt="Identity Verification"
                 placeholder="blurred"
                 objectFit="contain"
                 layout="constrained"
+                width={100}
               />
               <div className="text-2xl mb-2 font-semibold mt-4">Seamless Data Verification</div>
               <p className="mt-4">Quickly onboard only with the right customers across multiple countries, using their government identifiers.</p>
@@ -92,11 +93,12 @@ const Solutions: React.FC<Props> = ({ handleToggleRequest }) => {
 
             <div className="hidden group-hover:block px-4 py-6 bg-[#2F528E] text-white">
               <StaticImage
-                src="../../../public/images/idPasss/data-verification-hover.svg"
+                src="../../../public/images/idPasss/Instant_doc.png"
                 alt="Identity Verification"
                 placeholder="blurred"
                 objectFit="contain"
                 layout="constrained"
+                width={120}
               />
               <div className="text-2xl mb-2 font-semibold mt-4">Instant Document Verification</div>
               <p className="mt-4">Verify more than 6000 documents across hundreds of regions 
@@ -125,11 +127,12 @@ const Solutions: React.FC<Props> = ({ handleToggleRequest }) => {
               color:"white",
               }}>
               <StaticImage
-                src="../../../public/images/idPasss/data-verification-hover.svg"
+                src="../../../public/images/idPasss/accurate_biometric_small.png"
                 alt="Identity Verification"
                 placeholder="blurred"
                 objectFit="contain"
                 layout="constrained"
+                width={110}
               />
               <div className="text-2xl mb-2 font-semibold mt-4">Accurate Biometric Authentication</div>
               <p className="mt-4">Quickly onboard only with the right customers across multiple countries, using their government identifiers.</p>
@@ -154,17 +157,18 @@ const Solutions: React.FC<Props> = ({ handleToggleRequest }) => {
 
             <div className="hidden group-hover:block px-4 py-6 bg-[#2F528E] text-white">
               <StaticImage
-                src="../../../public/images/idPasss/data-verification-hover.svg"
+                src="../../../public/images/idPasss/checker_widget_small.png"
                 alt="Identity Verification"
                 placeholder="blurred"
                 objectFit="contain"
                 layout="constrained"
-
+                width={100}
               />
               <div className="text-2xl mb-2 font-semibold mt-4">Customizable Identity Checker Widget</div>
-              <p className="mt-4">Onboard with complete confidence! Effortlessly welcome new customers and businesses using our simple 
-                drag-and-drop feature, supported by our multi-language programming SDKs for seamless integration. 
-              </p>
+                <p className="mt-4">
+                  Onboard with complete confidence! Effortlessly welcome new customers and businesses using our simple 
+                  drag-and-drop feature, supported by our multi-language programming SDKs for seamless integration. 
+                </p>
             </div>
           </div>
           </div>
